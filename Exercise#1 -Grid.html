@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#1 -Grid</title>
+    <style>
+body {
+    border-sizing:border-box;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    
+}
+.box {
+    background-color: #444;
+    padding: 20px;
+    
+}
+.a {
+    grid-column: 1 /6;
+background-color:black;
+}
+.b {
+    grid-column: 1 / 5;
+    grid-row:2/ 10;
+    background-color:orange;
+}
+.c {
+    grid-column: 5 / 6;
+    grid-row: 2/10;
+    background-color:green;
+}
+.d {
+    grid-column: 1 / 6;
+    grid-row: 10/12;
+    background-color:blue;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+
+    </div>
+</body>
+</html>
