@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise#2- Grid advance</title>
+    <style>
+body {
+    border-sizing:border-box;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 5px;
+    text-align:left;
+    
+}
+.box {
+    background-color:#E0E0E0;
+    font-size: 150%;
+    height: 360px;  
+    width: 360px;
+    padding: 7px; 
+}
+.box2{
+    background-color:#E0E0E0;
+    font-size: 150%;
+    height: 360px;  
+    width: 360px;
+    padding: 7px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5px;
+}
+.Sub{
+    background-color:#BDBDBD;
+    font-size: 100%;
+    height: 160px;  
+    width: 160px;
+    padding: 7px; 
+}
+.box3{
+    background-color:#E0E0E0;
+    font-size: 150%;
+    height: 360px;  
+    width: 360px;
+    padding: 7px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.Sub1{
+    background-color:#BDBDBD;
+    font-size: 100%;
+    height: 160px;  
+    width: 343px;
+    padding: 7px; 
+}
+.box4{
+    background-color:#E0E0E0;
+    font-size: 150%;
+    height: 360px;  
+    width: 360px;
+    padding: 7px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 5px;
+}
+.Sub2{
+    background-color:#BDBDBD;
+    font-size: 100%;
+    height: 343px;  
+    width: 160px;
+    padding: 7px; 
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">Item 1</div>
+
+        <div class="box2">
+        <div class="Sub">Sub 1 </div>
+        <div class="Sub">Sub 2 </div>
+        <div class="Sub">Sub 3 </div>
+        <div class="Sub">Sub 4 </div>
+        </div>
+        <div class="box2">
+            <div class="Sub">Sub 1 </div>
+            <div class="Sub">Sub 2 </div>
+            <div class="Sub">Sub 3 </div>
+            <div class="Sub">Sub 4 </div>
+            </div>
+        <div class="box">Item 4</div>
+        <div class="box">Item 5</div>
+        <div class="box3">
+            <div class="Sub1">Sub 1 </div>
+            <div class="Sub1">Sub 2 </div>
+        </div>
+        <div class="box4">
+            <div class="Sub2">Sub 1 </div>
+            <div class="Sub2">Sub 2 </div>
+        </div>
+        <div class="box">Item 8</div>
+        <div class="box2">
+            <div class="Sub">Sub 1 </div>
+            <div class="Sub">Sub 2 </div>
+            <div class="Sub">Sub 3 </div>
+            <div class="Sub">Sub 4 </div>
+            </div>
+        <div class="box">Item 10</div>
+        <div class="box">Item 11</div>
+        <div class="box2">
+            <div class="Sub">Sub 1 </div>
+            <div class="Sub">Sub 2 </div>
+            <div class="Sub">Sub 3 </div>
+            <div class="Sub">Sub 4 </div>
+            </div>
+    </div>
+</body>
+</html>
